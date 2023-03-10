@@ -266,7 +266,6 @@ public class FlightBooking {
                     this.totalTicketPrice = (departingTicketPrice +charge)*2;
                 }
         }
-        System.out.println(totalTicketPrice);
     }
     public double getTotalTicketPrice(){
         return totalTicketPrice;

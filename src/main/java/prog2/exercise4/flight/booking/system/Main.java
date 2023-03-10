@@ -27,8 +27,6 @@ public class Main
         LocalDate returnDate = LocalDate.parse(sreturn);
         fb.setDepartureDate(departureDate);
         fb.setReturnDate(returnDate);
-        fb.getDepartureDate();
-        fb.getReturnDate();
         System.out.println();
         System.out.println("Your name :");
         String name = sc.next();
@@ -43,13 +41,15 @@ public class Main
         fb.getReturnTicketPrice();
         fb.setTotalTicketPrice();
         fb.getTotalTicketPrice();
-        //fb.setSourceAirport("NANJING LUKOU INTERNATIONAL AIRPORT");
-        //fb.setTripDestination();
-        //fb.setDestinatationAirport("OULU AIRPORT");
-        //fb.setTotalPassengers(2, 3);
-        //fb.setTotalTicketPrice(11.0, 22.0);
-        //System.out.println(fb.toString());
-        //fb.getBookingClass();
+        System.out.println(
+        "Thank you for booking your flight with "+fb.getFlightCompany()+". Following are the details of your booking and the trip: \n"+
+        "Ticket Number: " + fb.getTicketNumber()+"\n"+
+        "Passenger Name: "+ fb.getPassengerFullName()+"\n"+
+        "From "+fb.getTripSource()+" to "+fb.getTripSource()+"\n"+
+        "Date of departure: "+fb.getDepartureDate()+"\n"+
+        "Date of return: "+fb.getReturnDate()+"\n"+
+        "Total passengers: "+fb.getTotalPassengers()+"\n"+
+        "Total ticket price in Euros: "+fb.getTotalTicketPrice());
         sc.close();
     }
 }
