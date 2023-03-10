@@ -21,9 +21,9 @@ public class Main
         String a = sc.nextLine();
         fb.setBookingClass(a);
         fb.getTicketNumber();
-        String sdepart = "2023-03-04";
+        String sdepart = sc.nextLine();
         LocalDate departureDate = LocalDate.parse(sdepart);
-        String sreturn = "2023-03-05";
+        String sreturn = sc.nextLine();
         LocalDate returnDate = LocalDate.parse(sreturn);
         fb.setDepartureDate(departureDate);
         fb.setReturnDate(returnDate);

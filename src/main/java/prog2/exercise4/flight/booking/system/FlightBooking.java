@@ -295,18 +295,6 @@ public class FlightBooking {
         this.ticketNumber = f + m + "ASDF" + n;
         return this.ticketNumber;
     }
-    public String toString(){
-        return "Thank you for booking your flight with "+this.flightCompany".Following are the details of your booking and the trip:"+" \nTicket Number:"+this.ticketNumber
-        Passenger Name: passengerFullName
-        From TRIP_SOURCE to TRIP_DESTINATION
-        Date of departure: departingDate
-        Date of return: returningDate (Changed from old returningDate to new
-        returningDate)
-        Total passengers: totalPassengers
-        Total ticket price in Euros: totalTicketPrice
-        IMPORTANT NOTICE: As per our policy, the return date was changed because it was 
-        less than two days apart from your departure date.
-    }
     public void setBookingClass(String a){
 
         while(true){
